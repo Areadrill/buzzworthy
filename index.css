@@ -1,0 +1,167 @@
+body {
+    background-color: #ddd;
+    margin: 0;
+}
+
+.hero {
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://www.datapine.com/blog/wp-content/uploads/2018/11/10-technology-buzzwords-2019.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.formContainer {
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    width: 30vw;
+    height: 250px;
+    text-align: center;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,0.8) 0%, rgba(9,121,57,0.8) 0%, rgba(0,212,255,0.8) 100%);
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroTitle,
+.heroDescription,
+.boastingTitle,
+.loadertext,
+.result,
+.footerText {
+    color: #272D2D;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.heroTitle {
+    margin: 0;
+    font-size: 50px;
+}
+
+.heroDescription {
+    margin: 0;
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+.submit {
+    width: 45%;
+    margin-top: 30px;
+    height: 40px;
+}
+
+.input {
+    width: 50%;
+    height: 25px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    margin-top: 20px;
+}
+
+.loaderContainer {
+    display: flex;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.loader {
+    position: relative;
+    width: 75%;
+    height: 30px;
+    border: 1px solid #272D2D;
+}
+
+.progress {
+    width: 0;
+    height: 100%;
+    background-color: #26547C;
+    transition: width 1s; 
+}
+
+.loaderText {
+    margin: 0;
+    margin-top: 10px;
+}
+
+.resultContainer {
+    display: none;
+}
+
+.result {
+    font-size: 16px;
+}
+
+.boasting {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.boastingTitle {
+    font-size: 36px;
+}
+
+.techcontainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    width: 100%;
+}
+
+.rowContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.product {
+    position: relative;
+    max-width: 10vw;
+    max-height: 120px;
+}
+
+.productImage {
+    max-width: 100%;
+}
+
+.rowContainer ~ .rowContainer {
+    margin-top: 50px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+    background-color: #AFD2E9;
+    height: 50px;
+}
+
+.link {
+    text-decoration: none;
+    color: #777;
+}
+
+.footerText {
+    margin: 0;
+}
+
+.footer:first-child {
+    margin-left: 10px;
+}
+
+.footer:last-child {
+    margin-right: 10px;
+}
